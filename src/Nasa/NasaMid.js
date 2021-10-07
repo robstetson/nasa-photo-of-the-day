@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import { RainbowSpinner } from "../App";
+
+
 
 export default function MidSect(){
 
@@ -48,10 +51,13 @@ useEffect(()=>{
 
 
 return ( 
+  
   <div className="img_container">
+
 <img src={image} alt='Hello'/> 
 <p>Today's Date: {date}</p>
 <p>{copyright}</p>
+<RainbowSpinner />
 
       </div>
 )
